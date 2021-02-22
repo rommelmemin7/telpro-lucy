@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kanit', sans-serif;
+}
+
+nav{
+    /* position: sticky; */
+    /* top: 20px; */
+    width: 100%;
+}
+
+
+nav a{
+
+    width: 100%;
+    height: 40px;
+    color:rgb(1, 4, 14);
+    text-decoration: none;
+    /* display: inline-block; */
+    animation: aparecer 1s ease-in;
+}
+
+header{
+    background: #fff;  /* fallback for old browsers */
+   
+    
+    /* height: auto;
+    padding: 48px; */
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    /* max-width: 1200px; */
+    /* display: flex; /*flexbox, hace que la imagen se acomode dentro del texto*/
+    /*align-items: center;
+    justify-content: space-around; */
+    /* margin: auto; */
+}
+
+img { 
+   
+    display: block !important; 
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    animation: aparecer 1s ease-in;
+} 
+
+.textos{
+    width: 100%;
+    color: rgb(56, 87, 105);
+}
+
+.textos h1{
+    font-size: 40px;
+}
+.textos h2{
+    font-size: 30px;
+    color: springgreen;
+}
+
+.textos a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.wave{
+    height: 100px;
+    width: 100%;
+    background: white;
+}
+
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 100;
+    }
+}
