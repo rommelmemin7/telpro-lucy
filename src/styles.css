@@ -9,82 +9,187 @@ body{
     font-family: 'Kanit', sans-serif;
 }
 
-nav{
-    /* position: sticky; */
-    /* top: 20px; */
-    width: 100%;
+
+.estatico{
+    position: fixed !important;
 }
 
+.estatico{
+    position: fixed !important;
+}
 
-nav a{
+ nav a{
 
+    
     width: 100%;
     height: 40px;
-    color:rgb(1, 4, 14);
+    color:rgb(210, 213, 224)!important;
     text-decoration: none;
-    /* display: inline-block; */
+    display: inline-block;
     animation: aparecer 1s ease-in;
+} 
+a:hover{
+    background-color:rgb(9, 10, 75);
+    border-radius: 10px 10px 10px 10px;
 }
 
 header{
-    background: #fff;  /* fallback for old browsers */
-   
-    
-    /* height: auto;
-    padding: 48px; */
+    background: #fff; 
     width: 100%;
 }
 
 .container{
     width: 100%;
-    /* max-width: 1200px; */
-    /* display: flex; /*flexbox, hace que la imagen se acomode dentro del texto*/
-    /*align-items: center;
-    justify-content: space-around; */
-    /* margin: auto; */
 }
 
 img { 
-   
-    display: block !important; 
-    height: 100%;
-    object-fit: cover;
+    height: calc(100vh - 50px);
+    margin-top: 50px;
     width: 100%;
     animation: aparecer 1s ease-in;
+    background: red;
+} 
+.img-telpronet { 
+
+
+    animation:   escalar 1s ease-in; 
+
+    position: absolute; 
+    top: 7%; 
+    left: 23%; 
+    border: 1px; 
+    width: 45%; 
+    height: calc(50vh ); 
+    background-color: transparent;
+    
+
 } 
 
-.textos{
-    width: 100%;
-    color: rgb(56, 87, 105);
+
+ h3{
+    font-size: 10px;
+    color: #fff;
 }
 
-.textos h1{
+.title{
+    color: rgb(69, 80, 112);
+    padding: 15px;
+    margin-top: 20px;
     font-size: 40px;
 }
-.textos h2{
-    font-size: 30px;
-    color: springgreen;
+.sub-title{
+    font-size: 20px;
+    color: slategrey;
 }
 
-.textos a {
-    display: inline-block;
+
+.caja {
+   float: left;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    margin: 20px 20px 20px 20px;
     color: #fff;
-    font-weight: 300;
-    text-decoration: none;
-    margin-top: 30px;
-    border: 1px solid #fff;
-    width: 150px;
-    border-radius: 3px;
+    background: #3498db;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.caja-planes-servicios {
+     float: left;
+     text-align: justify;
+     margin: 20px 20px 20px 20px;
+     color: #fff;
+     background: #3498db;
+     border-radius: 15px 15px 15px 15px;
+ }
+ .caja-planes-servicios-atras {
+    float: left;
+    text-align: justify;
+     margin: 20px 20px 20px 20px;
+     color: #fff;
+     background: #093e61;
+     border-radius: 15px 15px 15px 15px;
+ }
+
+.seccion-contenedor{
     text-align: center;
-    padding: 10px 0;
 }
 
-.wave{
-    height: 100px;
+.tabla-plan{
+    text-align: justify;
+   padding: 40px 0 40px 0 ;
+}
+.espacio-secciones{
+    padding-top: 20px ;
+}
+
+
+.clientes{
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.espacio-secciones-planes{
+    padding-top: 20px ;
+}
+.espacio-secciones{
+    padding-top: 20px ;
+}
+
+.speedtest{
+  
+    height: 500px;
+    width: 700px;
+    max-width: 700px !important;
+    
+}
+
+.pie-pagina {
+    background-position: center center;
+    background-repeat: no-repeat;
     width: 100%;
-    background: white;
-}
+  }
 
+  .logo-imagen{
+    width: 80px;
+    height: 55px;
+    border-radius: 10%;
+   
+   margin-top: -12px; 
+  }
+
+  .efecto-color-variable  {
+    list-style-type: none;
+    display: flex;
+    padding: 18px 0;
+    background-size: 400% 400%;
+    background-image: linear-gradient(-45deg, #010752, #1b5892, #4169c0, #1b5892,#010752);
+    animation: 20s unGradiente infinite;
+    border-radius: 5px;
+    box-shadow: 3px 3px 20px #3374ff;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  nav{
+    width: 100%;
+    z-index: 200;
+    display: block;
+    background-color: rgb(212, 209, 209);
+}
+  
+
+.pie-pagina {
+    
+    background: #1e3c72;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+
+  
 
 @keyframes aparecer{
     0%{
@@ -95,3 +200,48 @@ img {
         opacity: 100;
     }
 }
+
+
+@keyframes rotar{
+    0%{
+       transform: rotate(1080deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes escalar{
+    0%{
+        transform: scale(0);
+       
+    }
+
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+  
+  @keyframes unGradiente {
+    0% {
+      background-position: 0% 50%;
+    }
+    
+    50%{
+      background-position: 100% 50%;
+    }
+    
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+
+
+
+
+
+
+
+  
