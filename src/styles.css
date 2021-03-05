@@ -6,8 +6,6 @@
     box-sizing: border-box;
 } 
 
-
-
 body{
     font-family: 'Kanit', sans-serif;
 }
@@ -17,10 +15,7 @@ body{
     position: fixed !important;
 }
 
-
  nav a{
-
-    
     width: 100%;
     height: 40px;
     color:rgb(210, 213, 224)!important;
@@ -28,6 +23,9 @@ body{
     display: inline-block;
     animation: aparecer 1s ease-in;
 } 
+
+
+
 a:hover{
     background-color:rgb(9, 10, 75);
     border-radius: 10px 10px 10px 10px;
@@ -53,25 +51,20 @@ header{
 
 .img-cabecera { 
     animation: escalar 1s ease-in;
-    /* display: block; */
     position: absolute; 
     top: 20%; 
     left: 10%; 
-    /* border: 1px;  */
-    /* width:auto; 
-    height: calc(100vh-10px);   */
     height: auto;
     width: 70%;
- 
     background-color: transparent;
 } 
+
 .img-display{
     width: 100%;
     height: 100%;
     display: block;
     padding: 50px 150px 50px 150px;
 }
-
 
  h3{
     font-size: 10px;
@@ -84,15 +77,13 @@ header{
     margin-top: 20px;
     font-size: 40px;
 }
+
 .sub-title{
     font-size: 20px;
     color: slategrey;
 }
 
-
 .caja {
- 
-
     padding: 10px 10px 10px 10px;
     text-align: justify;
     margin: 20px 20px 20px 20px; 
@@ -100,12 +91,9 @@ header{
     background: #3498db;
     border-radius: 15px 15px 15px 15px;
     height: 100%;
-
 }
 
 .caja-mision-vision {
- 
-
     padding: 10px 10px 10px 10px;
     text-align: justify;
     margin: 20px 20px 20px 20px; 
@@ -113,9 +101,7 @@ header{
     background: #3498db;
     border-radius: 15px 15px 15px 15px;
     height: 92%;
-
 }
-
 
 .seccion-contenedor{
     text-align: center;
@@ -123,12 +109,12 @@ header{
 
 .tabla-plan{
     text-align: justify;
-   padding: 40px 0 40px 0 ;
+    padding: 40px 0 40px 0 ;
 }
+
 .espacio-secciones{
     padding-top: 20px ;
 }
-
 
 .clientes{
     max-width: 400px;
@@ -143,11 +129,9 @@ header{
 }
 
 .speedtest{
-  
     height: 500px;
     width: 700px;
     max-width: 700px !important;
-    
 }
 
 .pie-pagina {
@@ -161,8 +145,7 @@ header{
     width: 80px;
     height: 55px;
     border-radius: 10%;
-   
-   margin-top: -12px; 
+    margin-top: -12px; 
   }
 
   .efecto-color-variable  {
@@ -177,27 +160,26 @@ header{
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
   }
+
   nav{
     width: 100%;
     z-index: 200;
     display: block;
     background-color: rgb(212, 209, 209);
-}
+  }
   
 
 .pie-pagina {
     
-    background: #1e3c72;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1e3c72; 
+    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  
+    background: linear-gradient(to right, #2a5298, #1e3c72); 
 
-    
     background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
   }
 
-  
   .btn-face
   {
     text-align: center;
@@ -225,7 +207,6 @@ header{
     }
 }
 
-
 @keyframes rotar{
     0%{
        transform: rotate(1080deg);
@@ -235,6 +216,7 @@ header{
         transform: rotate(0deg);
     }
 }
+
 @keyframes escalar{
     0%{
         transform: scale(0);
@@ -245,7 +227,6 @@ header{
         transform: scale(1.0);
     }
 }
-
   
   @keyframes unGradiente {
     0% {
@@ -285,7 +266,6 @@ header{
     }
   }
 
-
   @media (max-width: 576px) {
     .caja-mision-vision {
         height: 95%;
@@ -298,16 +278,21 @@ header{
     }
   }
 
-
   @media (max-width: 1030px) {
     .img-bg-cabecera {
         width: auto;
     }
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 280px) {
     .img-display {
-      padding: 20px 50px 20px 50px;
+      padding: 0px 0px 0px 0px;
+    }
+  }
+
+  @media (min-width:281px) and (max-width: 576px) {
+    .img-display {
+      padding: 10px 20px 10px 20px;
     }
   }
 
@@ -320,6 +305,16 @@ header{
   @media (max-width: 576px) {
     .img-pie {
 
-        padding: 50px 50px 50px 50px;
+        padding: 30px 30px 30px 30px;
     }
   }
+
+  @media (max-width: 320px) {
+    .img-pie {
+
+        padding: 5px 5px 5px 5px;
+         max-width: 180px; 
+    }
+  }
+
+
